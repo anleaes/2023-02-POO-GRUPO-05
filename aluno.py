@@ -4,4 +4,4 @@ class Aluno:
         self.curso = None
 
     def escolher_curso(self, curso):
-          self.curso = curso
+        self.curso = curso
