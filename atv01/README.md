@@ -62,12 +62,15 @@ Pessoa --|> PessoaJuridica
 
 #####################################################################
 
-Classes a serem criadas:
-    Aluno (numero_matricula, pessoa_fisica)
-    Pessoa (nome, endereco)
-    PessoaFisica (cpf, data_nascimento, pessoa)
-    PessoaJuridica (cnpj, razao_social, data_abertura, pessoa)
-    Inscricao (valor_inscricao, data_matricula, curso, aluno_matriculado, contratante)
-    Curso (Nome, carga_horaria)
+Classes a serem criadas e seus resposaveis:
+    Aluno (numero_matricula, pessoa_fisica) Gabriel
+    Pessoa (nome, endereco) Gabriel
+    PessoaFisica (cpf, data_nascimento, pessoa) Raphael
+    PessoaJuridica (cnpj, razao_social, data_abertura, pessoa) Raphael
+    Inscricao (valor_inscricao, data_matricula, curso, aluno_matriculado, contratante) Ricardo
+    Curso (Nome, carga_horaria) Ricardo
+    **MAIN EM CONJUNTO
 
 #####################################################################
+
+
