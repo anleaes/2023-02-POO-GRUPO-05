@@ -1,3 +1,4 @@
+from pessoa_fisica import PessoaFisica
 class Aluno:
     
     def __init__(self, numero_matricula, pessoa_fisica):
