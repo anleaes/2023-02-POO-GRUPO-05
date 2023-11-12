@@ -67,13 +67,14 @@ Product --o OrderItem
 
 #####################################################################
 
-Classes a serem criadas:
-    Category (id, name, description)
-    Product (name, description, date_fabrication, is_active, category)
-    OrderItem (quantity, unitary_price, order, product )
-    Order (total_price, status, client )
-    Client (first_name, last_name, address, cell_phone, email, gender)
-    ClientSocialnetwork (client, socialnetwork)
-    Socialnetwork (name, description)
+Classes a serem criadas e seus responsáveis:
+    Category (id, name, description) Gabriel
+    Product (name, description, date_fabrication, is_active, category) Gabriel 
+    OrderItem (quantity, unitary_price, order, product ) Raphael
+    Order (total_price, status, client ) Raphael
+    Client (first_name, last_name, address, cell_phone, email, gender) Ricardo
+    ClientSocialnetwork (client, socialnetwork) Ricardo
+    Socialnetwork (name, description) Gabriel
+    **MAIN EM CONJUNTO
 
 #####################################################################
