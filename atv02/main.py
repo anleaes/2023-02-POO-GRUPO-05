@@ -4,7 +4,7 @@ from order_item import OrderItem
 from order import Order
 from client import Client
 from client_socialnetwork import ClientSocialnetwork
-from socialnetwork import Socialnetwork
+from socialnetwork import SocialNetwork
 
 # Criando instâncias de Category
 category = Category(1, "Eletronicos", "Componentes Eletronicos")
@@ -13,7 +13,7 @@ order_item = OrderItem(2, 1200.00, None, product)
 client = Client("Anakin", "Skywalker", "Mos Espa", "(51)3333.3333", "anakin@notvader.com", "Not-a-Droid")
 order = Order(3500.00, "Aguardando", client)
 order_item.order = order
-social_network = Socialnetwork("Twitter","just tweet it")
+social_network = SocialNetwork("Twitter","just tweet it")
 client_social_network = ClientSocialnetwork(client, social_network)
 
 ########################################################################
