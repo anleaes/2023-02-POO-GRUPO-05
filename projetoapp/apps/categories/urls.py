@@ -8,5 +8,6 @@ router = routers.DefaultRouter()
 router.register('', views.CategoryViewSet, basename='categorias')
 
 urlpatterns = [
-    path('', include(router.urls) ) 
+    path('', include(router.urls) ),
+    path('clientes/', views.ClienteListCreateView.as_view(), name='cliente-lista')
 ]

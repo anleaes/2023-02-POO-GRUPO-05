@@ -12,3 +12,15 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Cliente(models.Model):
+    nome = models.CharField('Nome', max_length=50)
+    endereco = models.TextField('Endereco', max_length=100)
+
+    class Meta:
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'Clientes'
+        ordering = ['id']
+
+    def __str__(self):
+        return self.nome
