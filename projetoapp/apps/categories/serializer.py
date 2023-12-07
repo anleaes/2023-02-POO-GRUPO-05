@@ -12,6 +12,9 @@ class CategorySerializer(serializers.ModelSerializer):
         
         # Para chamar somentes os atributos de interesse:
         # fields = ['id','created_on', 'updated_on', 'name', 'description']
+ serializer_cliente
+
+main
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cliente
