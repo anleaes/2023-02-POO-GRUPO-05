@@ -16,7 +16,8 @@ class Category(models.Model):
 class Cliente(models.Model):
     nome = models.CharField('Nome', max_length=50)
     endereco = models.TextField('Endereco', max_length=100)
-
+    genero = models.CharField('Genero H ou M', max_length=1)
+    
     class Meta:
         verbose_name = 'Cliente'
         verbose_name_plural = 'Clientes'
