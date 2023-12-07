@@ -1,4 +1,5 @@
 from .models import Category
+from .models import Cliente
 from rest_framework import serializers
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -11,3 +12,8 @@ class CategorySerializer(serializers.ModelSerializer):
         
         # Para chamar somentes os atributos de interesse:
         # fields = ['id','created_on', 'updated_on', 'name', 'description']
+
+class ClienteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Cliente
+        fields = ['id', 'nome', 'endereco']
