@@ -4,3 +4,7 @@ modeloapp/__pycache__/*
 /apps/categories/migrations/*
 /apps/formapagamento/__pycache__/*
 /apps/formapagamento/migrations/*
+/apps/carteira/migrations/*
+/apps/carteira/__pycache__/*
+/apps/locacao/migrations/*
+/apps/locacao/__pycache__/*
