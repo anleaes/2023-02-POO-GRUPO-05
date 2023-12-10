@@ -42,6 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #'rest_framework',
+    #'categories.apps.CategoriesConfig',
+    #'clients.apps.ClientsConfig',
+    #'categories.apps.CategoriesConfig',
+    #'formapagamento.apps.FormapagamentoConfig',
+    #'orders.apps.ordersConfig',
+    #'products.apps.ProductsConfig',
+    #'socialnetworks.apps.SocialnetworksConfig',
 ]
 
 MIDDLEWARE = [
