@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     #'orders.apps.ordersConfig',
     #'products.apps.ProductsConfig',
     #'socialnetworks.apps.SocialnetworksConfig',
+    #'locacao.apps.LocacaoConfig',
+    
 ]
 
 MIDDLEWARE = [
