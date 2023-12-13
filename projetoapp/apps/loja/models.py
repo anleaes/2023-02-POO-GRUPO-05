@@ -1,12 +1,10 @@
 from django.db import models
-
-# Create your models here.
+from veiculos.models import Veiculo 
 
 class Loja(models.Model):
-    endereco = models.TextField()
-    gerente = models.CharField(max_length=100)
-    veiculo = models.OneToOneField(Veiculo, on_delete=models.SET_NULL, null=True, blank=True)
-    motoristas = models.ManyToManyField(Motorista)
+    endereco = models.CharField('Endereço', max_length=100)
+    gerente = models.CharField('Gerente', max_length=50)
+    veiculo = models.ForeignKey(Veiculo, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = 'Loja'
@@ -14,4 +12,4 @@ class Loja(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return f'Loja em {self.endereco} gerenciada por {self.gerente}'
+        return f'Loja {self.id}'

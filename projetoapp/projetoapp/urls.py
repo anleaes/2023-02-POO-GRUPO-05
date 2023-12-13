@@ -20,15 +20,12 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('carteira/', include('carteira.url', namespace='carteira')),
+    path('clients/', include(('clients.urls', 'clientes'), namespace='clientes')),
     path('formapagamento/', include('formapagamento.urls', namespace='formapagamento')),
-    path('products/', include('products.urls', namespace='produtos')),
-    path('categories/', include('categories.urls', namespace='categorias')),
-    path('clients/', include('clients.urls', namespace='clientes')),
-    path('socialnetworks/', include('socialnetworks.urls', namespace='midias')),
-    # path('locacao/', include('locacao.urls')),
-    # path('loja/', include('loja.urls')),
-    # path('motorista/', include('motorista.urls')),
-    # path('orders/', include('orders.urls')),
-    # path('locacao/', include('locacao.urls', namespace='locacao')),
+    path('funcionarios/', include(('funcionarios.url', 'funcionarios'), namespace='funcionarios')),
+    path('locacao/', include('locacao.urls', namespace='locacao')),
+    path('loja/', include('loja.urls', namespace='loja')),
+    path('motorista/', include('motorista.url', namespace='motorista')),
+    path('veiculos/', include(('veiculos.url', 'veiculos'), namespace='veiculos')),
 
 ]

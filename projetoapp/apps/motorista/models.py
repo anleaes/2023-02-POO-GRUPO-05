@@ -1,15 +1,17 @@
 from django.db import models
 
-# Create your models here.
+from django.db import models
+from carteira.models import Carteira 
 
 class Motorista(models.Model):
-    nome = models.CharField(max_length=100)
-    cpf = models.CharField(max_length=14, unique=True)
- 
+    nome = models.CharField('Nome', max_length=50)
+    cpf = models.CharField('CPF', max_length=11, unique=True)
+    carteira = models.OneToOneField(Carteira, on_delete=models.CASCADE)
+
     class Meta:
         verbose_name = 'Motorista'
         verbose_name_plural = 'Motoristas'
-        ordering = ['id']   
+        ordering = ['id']
 
     def __str__(self):
         return self.nome

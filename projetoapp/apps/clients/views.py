@@ -1,12 +1,7 @@
-from django.shortcuts import render
-from .models import Client, ClientSocialnetwork
 from rest_framework import viewsets
-from .serializer import ClientSerializer, ClientSocialnetworkSerializer
+from .models import Cliente
+from .serializer import ClienteSerializer
 
-class ClientViewSet(viewsets.ModelViewSet):
-    queryset = Client.objects.all()
-    serializer_class = ClientSerializer
-
-class ClientSocialnetworkViewSet(viewsets.ModelViewSet):
-    queryset = ClientSocialnetwork.objects.all()
-    serializer_class = ClientSocialnetworkSerializer
+class ClienteViewSet(viewsets.ModelViewSet):
+    queryset = Cliente.objects.all()
+    serializer_class = ClienteSerializer

@@ -1,12 +1,9 @@
 from django.urls import path, include
-from . import views
 from rest_framework import routers
-
-app_name = 'clients'
+from .views import ClienteViewSet
 
 router = routers.DefaultRouter()
-router.register('', views.ClientViewSet, basename='clientes')
-router.register('socialnetworks', views.ClientSocialnetworkViewSet, basename='client-socialnetworks')  # Ajuste aqui
+router.register('', ClienteViewSet, basename='clientes')
 
 urlpatterns = [
     path('', include(router.urls)),
