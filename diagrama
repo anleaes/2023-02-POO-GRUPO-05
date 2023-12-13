@@ -1,0 +1,61 @@
+@startuml
+
+class Veiculo {
+ marca
+ modelo
+ cor
+ km
+ categoria
+}
+
+class Cliente {
+ nome
+ endereço
+}
+
+class Loja {
+ endereço
+ gerente
+ veiculo: Veiculo
+}
+
+class FormaPagamento {
+ credito_vista
+ credito_parcelado
+ debito
+ pix
+ cheque
+}
+
+class Funcionario {
+ nome
+ horas_trabalho
+}
+
+class Carteira {
+cnh
+}
+
+class Motorista {
+nome
+cpf
+}
+
+class Locacao {
+data_retirada
+hora_retirada
+data_devolucao
+hora_devolucao
+valor
+
+}
+
+Locacao *-- Cliente
+Locacao *-- Funcionario
+Locacao *-- Loja
+Locacao *-- FormaPagamento
+Locacao *-- Veiculo
+Motorista *-- Locacao
+Motorista *-- Carteira
+
+@enduml
