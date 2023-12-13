@@ -6,8 +6,8 @@ app_name = 'clients'
 
 router = routers.DefaultRouter()
 router.register('', views.ClientViewSet, basename='clientes')
-
+router.register('socialnetworks', views.ClientSocialnetworkViewSet, basename='client-socialnetworks')  # Ajuste aqui
 
 urlpatterns = [
-    path('', include(router.urls) )
+    path('', include(router.urls)),
 ]

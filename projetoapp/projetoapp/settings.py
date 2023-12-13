@@ -47,14 +47,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'carteira.apps.CarteiraConfig',
-    #'categories.apps.CategoriesConfig',
-    #'clients.apps.ClientsConfig',
-    #'categories.apps.CategoriesConfig',
     'formapagamento.apps.FormapagamentoConfig',
-    #'orders.apps.ordersConfig',
-    #'products.apps.ProductsConfig',
-    #'socialnetworks.apps.SocialnetworksConfig',
+    'products.apps.ProductsConfig',
+    'categories.apps.CategoriesConfig',
+    'clients.apps.ClientsConfig',
+    'socialnetworks.apps.SocialnetworksConfig',
     #'locacao.apps.LocacaoConfig',
+    #'orders.apps.ordersConfig',
     
 ]
 

@@ -1,14 +1,11 @@
 from django.shortcuts import render
-from .models import Category
-from .models import Cliente
+from .models import Category, Cliente
 from rest_framework import viewsets
-from .serializer import CategorySerializer
-from .serializer import ClienteSerializer
+from .serializer import CategorySerializer, ClienteSerializer
 
-# Create your views here.
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
-    serializer_class = CategorySerializer  
+    serializer_class = CategorySerializer
 
 class ClienteListCreateView(viewsets.ModelViewSet):
     queryset = Cliente.objects.all()

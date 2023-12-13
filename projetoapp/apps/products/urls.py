@@ -8,5 +8,5 @@ router = routers.DefaultRouter()
 router.register('', views.ProductViewSet, basename='produtos')
 
 urlpatterns = [
-    path('', include(router.urls) )
+    path('', include(router.urls)),
 ]

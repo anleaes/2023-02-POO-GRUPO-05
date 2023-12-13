@@ -8,5 +8,5 @@ router = routers.DefaultRouter()
 router.register('', views.SocialnetworkViewSet, basename='redessociais')
 
 urlpatterns = [
-    path('', include(router.urls) )
+    path('', include(router.urls)),
 ]
