@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from .models import Motorista
+from rest_framework import viewsets
+from .serializer import MotoristaSerializer
 
-# Create your views here.
+class MotoristaViewSet(viewsets.ModelViewSet):
+    queryset = Motorista.objects.all()
+    serializer_class = MotoristaSerializer

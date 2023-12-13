@@ -5,8 +5,8 @@ from rest_framework import routers
 app_name = 'formapagamento'
 
 router = routers.DefaultRouter()
-router.register('', views.ProductViewSet, basename='pagamento')
+router.register('', views.FormaPagamentoViewSet, basename='pagamento')
 
 urlpatterns = [
-    path('', include(router.urls) )
+    path('', include(router.urls)),
 ]
