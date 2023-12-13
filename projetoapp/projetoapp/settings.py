@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     #'categories.apps.CategoriesConfig',
     #'clients.apps.ClientsConfig',
     #'categories.apps.CategoriesConfig',
-    #'formapagamento.apps.FormapagamentoConfig',
+    'formapagamento.apps.FormapagamentoConfig',
     #'orders.apps.ordersConfig',
     #'products.apps.ProductsConfig',
     #'socialnetworks.apps.SocialnetworksConfig',

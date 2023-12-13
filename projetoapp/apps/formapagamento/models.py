@@ -13,4 +13,4 @@ class FormaPagamento(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return f'FormaPagamento {self.id}'
+        return self.name
