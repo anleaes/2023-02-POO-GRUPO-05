@@ -5,3 +5,4 @@ class CarteiraSerializer(serializers.ModelSerializer):
     class Meta:
         model = Carteira
         fields = '__all__'
+        #

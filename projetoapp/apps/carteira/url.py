@@ -5,7 +5,7 @@ from rest_framework import routers
 app_name = 'carteira'
 
 router = routers.DefaultRouter()
-router.register('', views.ProductViewSet, basename='carteira')
+router.register('', views.CarteiraViewSet, basename='carteira')
 
 urlpatterns = [
     path('', include(router.urls) )

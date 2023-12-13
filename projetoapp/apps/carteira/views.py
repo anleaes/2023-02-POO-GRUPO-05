@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from .models import Carteira
 from rest_framework import viewsets
 from .serializer import CarteiraSerializer
